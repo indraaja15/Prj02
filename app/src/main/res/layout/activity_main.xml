@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/etSatu"
+        android:inputType="number"
+        android:ems="10"
+        android:hint="Masukkan angka pertama"
+        android:layout_below="@id/tvTitle"
+        android:textSize="14sp"
+        android:layout_marginTop="22dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="Autofill,HardcodedText" />
+
+    <EditText
+        android:id="@+id/etDua"
+        android:inputType="number"
+        android:ems="10"
+        android:hint="Masukkan angka kedua"
+        android:layout_below="@+id/etSatu"
+        android:textSize="14sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="Autofill,HardcodedText" />
+
+
+    <Button
+        android:text="+"
+        android:id="@+id/btTambah"
+        android:layout_width="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/etDua"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="18dp"
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <Button
+        android:text="-"
+        android:id="@+id/btKurang"
+        android:layout_width="80dp"
+        android:layout_alignBaseline="@+id/btTambah"
+        android:layout_alignBottom="@+id/btTambah"
+        android:layout_toRightOf="@+id/btTambah"
+        android:layout_toEndOf="@+id/btTambah"
+        android:layout_marginTop="18dp"
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <Button
+        android:text="/"
+        android:id="@+id/btBagi"
+        android:layout_width="80dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/etDua"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="18dp"
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <Button
+        android:text="X"
+        android:id="@+id/btKali"
+        android:layout_width="80dp"
+        android:layout_alignBaseline="@+id/btBagi"
+        android:layout_alignBottom="@+id/btBagi"
+        android:layout_toLeftOf="@+id/btBagi"
+        android:layout_toStartOf="@+id/btBagi"
+        android:layout_marginTop="18dp"
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <Button
+        android:text="Bersihkan"
+        android:id="@+id/btBersihkan"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btTambah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:text="Masukkan Dua angka"
+        android:id="@+id/tvTitle"
+        android:textAlignment="center"
+        android:textStyle="bold|normal"
+        android:textSize="24sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <TextView
+        android:text="Hasil"
+        android:id="@+id/tvHasil"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/btBersihkan"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <TextView
+        android:text="0"
+        android:id="@+id/Hasil"
+        android:layout_below="@+id/tvHasil"
+        android:layout_centerHorizontal="true"
+        android:textSize="36sp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>
